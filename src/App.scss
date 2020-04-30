@@ -48,13 +48,13 @@ a[data-toggle="collapse"] {
 ------------------------- */
 
 
-  @import"./variables";
-  @import"./font";
-  @import"./mixins";
-  @import"./layout";
-  @import"./user-conversition";
-  @import"./user-list";
-  @import"./action-box";
+  @import"./partials/variables";
+  @import"./partials/font";
+  @import"./partials/mixins";
+  @import"./partials/layout";
+  @import"./partials/user-conversition";
+  @import"./partials/user-list";
+  @import"./partials/action-box";
 
 
   /* ------------------
@@ -97,6 +97,9 @@ a[data-toggle="collapse"] {
 
     height: 90% !important;
   }
+  .ScrollbarsCustom-Content {
+    padding: 0 !important;
+}
   .red{
     color:$dark_coral !important;
   }

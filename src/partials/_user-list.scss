@@ -22,7 +22,9 @@
 
 .user-list {
     height: 90%;
-
+    @media(max-width:400px){
+        width: 240px;
+    }
     &__wrapper {
         padding   : 0px;
         height    : 100%;
@@ -58,6 +60,15 @@
             &:after {
                 display: none;
             }
+        }
+    }
+     
+    &__msg[activechat="active"]{
+        background-color: $grey;
+        @include transition-duration(0.1s);
+        @include transition-timing-function(ease-in-out);
+        &:after {
+            display: none;
         }
     }
 

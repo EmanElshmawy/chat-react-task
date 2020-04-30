@@ -4,11 +4,11 @@ import React from 'react'
 
 
 const UserDetails = ({ userData }) => {
-  const { name, image , msgTitle, date ,msg,MsgReceived } = userData;
+  const { name, image , msgTitle, date ,msg,MsgReceived, chatstate } = userData;
           return (
-          <li className="user-list__msg" data-chat="">
+          <li className="user-list__msg" activechat={chatstate === 'active' ? 'active' : ''}>
 
-          <div className="user-list__item " id={ MsgReceived > 0 ? 'notification' : '' }>
+          <div className="user-list__item " id={ MsgReceived > 0 ? 'notification' : '' } >
             <img className="personImg" src={image} alt="" />
             <div className="user-list__item__info">
               <p className="msg-title">{msgTitle}</p>

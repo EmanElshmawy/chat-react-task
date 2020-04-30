@@ -59,7 +59,7 @@ class Messages extends React.Component {
           <div className="bubble you">
             <div className="text">
               <div className="msg-details_title">
-                Daily grooming assistance
+                Chest Pain
                     </div>
 
               <div className="msg-details__date">

@@ -3,10 +3,11 @@ import UserDetails from './UserDetails';
 
 
 class Users extends React.Component {
-    state ={ UserData: [],
+    state = {
+        UserData: [],
 
-     };
-     componentWillMount() {
+    };
+    componentWillMount() {
         this.setState({
             UserData: [{
                 id: 1,
@@ -16,6 +17,7 @@ class Users extends React.Component {
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
                 MsgReceived: 0,
+                chatstate: 'active'
             },
             {
                 id: 2,
@@ -24,7 +26,8 @@ class Users extends React.Component {
                 msgTitle: 'Mom’s Diet',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 2
+                MsgReceived: 2,
+                chatstate: ''
             },
             {
                 id: 3,
@@ -33,7 +36,8 @@ class Users extends React.Component {
                 msgTitle: 'Anthony Baer',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             },
             {
                 id: 4,
@@ -42,7 +46,8 @@ class Users extends React.Component {
                 msgTitle: 'Easter Weekend',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             },
             {
                 id: 5,
@@ -51,7 +56,8 @@ class Users extends React.Component {
                 msgTitle: 'Stephanie Kim',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             },
             {
                 id: 6,
@@ -60,7 +66,8 @@ class Users extends React.Component {
                 msgTitle: 'Spring break schedule',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             }, {
                 id: 7,
                 name: '',
@@ -68,7 +75,8 @@ class Users extends React.Component {
                 msgTitle: 'David Williams',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             }, {
                 id: 8,
                 name: 'Love One',
@@ -76,16 +84,18 @@ class Users extends React.Component {
                 msgTitle: 'Spring break schedule',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             }
-            , {
+                , {
                 id: 9,
                 name: 'Karen Becker',
                 image: require('../assets/images/chat/user3.png'),
                 msgTitle: 'Mom’s Discharge Plan',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: 0
+                MsgReceived: 0,
+                chatstate: ''
             }
             ]
         });
