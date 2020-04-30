@@ -8,8 +8,8 @@ class Messages extends React.Component {
       <div className="user-conversition__chat-wrapper">
         <div className="user-conversition__chat-box" data-chat="person1">
           <p className="plan-alert text-center">
-            Starter Care Plan created + daily actions added
-                </p>
+            Starter Care Plan created + daily actions added <span class="time">12:10p</span>
+          </p>
           <div className="bubble me">
             <div className="text">
               <div className="msg-details_title">
@@ -47,7 +47,7 @@ class Messages extends React.Component {
               </div>
             </div>
             <div className="time">
-              <span>me</span>
+              <span class="user">me</span>
               <div className="msg-details_user">
                 <div className="content">
                   <span className="date">12:20p</span>
@@ -77,43 +77,43 @@ class Messages extends React.Component {
               <div className="msg-details_action">
                 <div className="img-wrapper">
                   <span className="icon" >😥</span>
-                  <span>Severe</span>
+                  <span class="textInfo red">Severe</span>
                 </div>
                 <div className="img-wrapper">
                   <img
                     src={require("../assets/images/messages/invalid_name.png")}
                     alt=""
                   />
-                  <span>View History</span>
+                  <span class="textInfo">View History</span>
                 </div>
               </div>
             </div>
             <div className="time">
-              <span>me</span>
+              <div className="content">
+                <span className="date">12:20p</span>
+              </div>
               <div className="msg-details_user">
-                <div className="content">
-                  <span className="date">12:20p</span>
-                </div>
+                <span class="user">me</span>
                 <img src={require("../assets/images/chat/user3.png")} alt="" />
               </div>
             </div>
           </div>
-          <div className="bubble you">
+          <div className="bubble you info-message">
             <p className="text">
               I moved Karen’s knitting kit from the study upstairs to the
               the living room.
                   </p>
             <div className="time">
-              <span>me</span>
+              <div className="content">
+                <span className="date">12:20p</span>
+              </div>
               <div className="msg-details_user">
-                <div className="content">
-                  <span className="date">12:20p</span>
-                </div>
-                <img src={require("../assets/images/chat/user2.jpg")} alt="" />
+                <span class="user">me</span>
+                <img src={require("../assets/images/chat/user3.png")} alt="" />
               </div>
             </div>
           </div>
-          <div className="bubble me">
+          <div className="bubble me info-message">
             <p className="text">
               That’s a good call. I’ll be stopping by later to have dinner
               with her. Pizza for everyone! Join us. Lorem ipsum dolor sit
@@ -123,7 +123,7 @@ class Messages extends React.Component {
               egestas, feugiat massa viverra, posuere nisl.
                   </p>
             <div className="time">
-              <span>me</span>
+              <span class="user">me</span>
               <div className="msg-details_user">
                 <div className="content">
                   <span className="date">12:20p</span>

@@ -9,20 +9,31 @@ import Messages from './components/Messages';
 import MessagesTyping from './components/MessagesTyping';
 
 class App extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.contactList = this.contactList.bind(this);
-    //     this.state = {
-    //         x: document.getElementById('contactList'),
+    constructor() {
+        super();
+        this.updateThisCounter = this.updateThisCounter.bind(this);
+        this.state = {
+            // x: document.getElementById('contactList'),
 
-    //     };
-    // }
+        };
+    }
     // contactList() {
     //     this.setState({
     //         x: document.getElementById('contactList'),
 
     //     });
     // }
+    updateThisCounter(){
+        console.log('hello');
+        let shadesEl = document.querySelector('#contactList');
+
+        if (shadesEl.classList.contains('active')) {
+          shadesEl.classList.remove('active');
+        } else {
+          shadesEl.classList.add('active');
+        }  
+    }
+
     render() {
         return (
             <section className="chatbox">
@@ -30,7 +41,7 @@ class App extends React.Component {
                     <ActionBox></ActionBox>
                     <div className="contact-list" id="contactList">
                         {/* <UsersTitle contactList={this.contactList()}></UsersTitle> */}
-                        <UsersTitle></UsersTitle>
+                        <UsersTitle  triggerParentUpdate={this.updateThisCounter}></UsersTitle>
                         <Scrollbar style={{ width: 300 }}>
                             <div className="user-list">
                                 <ul className="user-list__wrapper">
@@ -41,7 +52,7 @@ class App extends React.Component {
                     </div>
                     <div className="user-conversition" id="content">
                         <div className="user-conversition__wrapper">
-                            <UserControl></UserControl>
+                            <UserControl triggerParentUpdate={this.updateThisCounter}></UserControl>
                             <Scrollbar >
                                 <Messages></Messages>
                             </Scrollbar>

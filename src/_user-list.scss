@@ -65,7 +65,7 @@
         display    : flex;
         align-items: stretch;
 
-        &.notification {
+        &#notification {
             img {
                 border: 3px solid $darkGreen;
             }

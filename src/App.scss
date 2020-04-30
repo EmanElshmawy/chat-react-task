@@ -76,13 +76,27 @@ a[data-toggle="collapse"] {
     src        : local('Open Sans'), local('OpenSans'),url("./assets/fonts/GothamXNarrow-MediumItalic.ttf"), url("./assets/fonts/GothamXNarrow-MediumItalic.eot") format("embedded-opentype"), url("./assets/fonts/GothamXNarrow-MediumItalic.woff2") format("woff2"), url("./assets/fonts/GothamXNarrow-MediumItalic.woff") format("woff"), url("./assets/fonts/GothamXNarrow-MediumItalic.ttf") format("truetype"), url("./assets/fonts/GothamXNarrow-MediumItalic.svg") format("svg");
   }
 
+  /* ------------------
+        General
+--------------------- */
+
   .ScrollbarsCustom-Track.ScrollbarsCustom-TrackY{
     width: 8px !important;
     background-color: #ededed !important;
-    top:0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 110% !important;
+    border-radius: 0 !important;
   }
   .ScrollbarsCustom-Thumb.ScrollbarsCustom-ThumbY{
     width: 8px !important;
     border-radius: 3px !important;
     background-color: #c5d2d4 !important;
+  }
+  .ScrollbarsCustom.trackYVisible{
+
+    height: 90% !important;
+  }
+  .red{
+    color:$dark_coral !important;
   }

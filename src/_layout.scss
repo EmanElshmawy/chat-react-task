@@ -37,12 +37,26 @@
             color: #fff;
         }
 
-        #contactListClose, #contactListCollapse {
+        #contactListClose,
+        #contactListCollapse {
             display     : none;
-            padding     : 3.5px 10px;
+            padding     : 10px;
             background  : transparent;
             border-color: rgba(255, 255, 255, 0.6);
+
+            img {
+                width: 10px;
+            }
         }
+
+        #contactListCollapse {
+            padding: 6px 10px;
+
+            img {
+                width: 14px;
+            }
+        }
+
     }
 }
 
@@ -107,12 +121,9 @@
                 display: none;
             }
 
-            #contactListClose {
-                display: inline-block;
-            }
-
+            #contactListClose,
             #contactListCollapse {
-                display: inline-block;
+                display: flex;
             }
         }
     }

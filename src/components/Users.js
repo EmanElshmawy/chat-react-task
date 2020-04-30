@@ -15,68 +15,68 @@ class Users extends React.Component {
                 msgTitle: 'Mom’s Discharge Plan',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0,
             },
             {
                 id: 2,
                 name: 'Karen Becker',
                 image: require('../assets/images/chat/user1.jpg'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'Mom’s Diet',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 2
             },
             {
                 id: 3,
-                name: 'Karen Becker',
+                name: '',
                 image: require('../assets/images/chat/user2.jpg'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'Anthony Baer',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             },
             {
                 id: 4,
-                name: 'Karen Becker',
+                name: 'Love One',
                 image: require('../assets/images/chat/user3.png'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'Easter Weekend',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             },
             {
                 id: 5,
-                name: 'Karen Becker',
+                name: '',
                 image: require('../assets/images/chat/user1.jpg'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'Stephanie Kim',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             },
             {
                 id: 6,
-                name: 'Karen Becker',
+                name: 'Love One',
                 image: require('../assets/images/chat/user2.jpg'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'Spring break schedule',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             }, {
                 id: 7,
-                name: 'Karen Becker',
+                name: '',
                 image: require('../assets/images/chat/user3.png'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'David Williams',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             }, {
                 id: 8,
-                name: 'Karen Becker',
+                name: 'Love One',
                 image: require('../assets/images/chat/user3.png'),
-                msgTitle: 'Mom’s Discharge Plan',
+                msgTitle: 'Spring break schedule',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             }
             , {
                 id: 9,
@@ -85,7 +85,7 @@ class Users extends React.Component {
                 msgTitle: 'Mom’s Discharge Plan',
                 msg: 'Lorem Ipsum is simply dummy text of the printing and typesetting',
                 date: '31 oct',
-                MsgReceived: '2'
+                MsgReceived: 0
             }
             ]
         });

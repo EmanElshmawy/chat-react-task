@@ -8,7 +8,7 @@ const UserDetails = ({ userData }) => {
           return (
           <li className="user-list__msg" data-chat="">
 
-          <div className="user-list__item">
+          <div className="user-list__item " id={ MsgReceived > 0 ? 'notification' : '' }>
             <img className="personImg" src={image} alt="" />
             <div className="user-list__item__info">
               <p className="msg-title">{msgTitle}</p>
