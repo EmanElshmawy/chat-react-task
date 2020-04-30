@@ -11,7 +11,7 @@ class UsersTitle extends React.Component {
           <img src={require("../assets/images/actionbox/new_conversation.png")} alt="" className="img-fluid w-100" />
         </div>
 
-        <button type="button" id="contactListClose" className="btn btn-info float-right" onClick={this.props.triggerParentUpdate}>
+        <button type="button" id="contactListClose" className="btn btn-info float-right" onClick={this.props.clickAction}>
         <img src={require("../assets/images/topBar/close.svg")} alt="" />
         </button>
       </div>

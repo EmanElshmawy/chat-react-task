@@ -8,7 +8,7 @@ class UserControl extends React.Component {
   render() {
     return (
       <div className="user-conversition__actionBar">
-        <button type="button" id="contactListCollapse" className="btn btn-info float-left" onClick={this.props.triggerParentUpdate}>
+        <button type="button" id="contactListCollapse" className="btn btn-info float-left" onClick={this.props.clickAction}>
           <img src={require("../assets/images/topBar/menu.svg")} alt="" />
         </button>
         <p className="title">

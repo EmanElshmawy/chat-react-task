@@ -11,19 +11,11 @@ import MessagesTyping from './components/MessagesTyping';
 class App extends React.Component {
     constructor() {
         super();
-        this.updateThisCounter = this.updateThisCounter.bind(this);
+        this.ToggleBtnClick = this.ToggleBtnClick.bind(this);
         this.state = {
-            // x: document.getElementById('contactList'),
-
         };
     }
-    // contactList() {
-    //     this.setState({
-    //         x: document.getElementById('contactList'),
-
-    //     });
-    // }
-    updateThisCounter(){
+    ToggleBtnClick(){
         console.log('hello');
         let shadesEl = document.querySelector('#contactList');
 
@@ -41,7 +33,7 @@ class App extends React.Component {
                     <ActionBox></ActionBox>
                     <div className="contact-list" id="contactList">
                         {/* <UsersTitle contactList={this.contactList()}></UsersTitle> */}
-                        <UsersTitle  triggerParentUpdate={this.updateThisCounter}></UsersTitle>
+                        <UsersTitle  clickAction={this.ToggleBtnClick}></UsersTitle>
                         <Scrollbar style={{ width: 300 }}>
                             <div className="user-list">
                                 <ul className="user-list__wrapper">
@@ -52,7 +44,7 @@ class App extends React.Component {
                     </div>
                     <div className="user-conversition" id="content">
                         <div className="user-conversition__wrapper">
-                            <UserControl triggerParentUpdate={this.updateThisCounter}></UserControl>
+                            <UserControl clickAction={this.ToggleBtnClick}></UserControl>
                             <Scrollbar >
                                 <Messages></Messages>
                             </Scrollbar>
