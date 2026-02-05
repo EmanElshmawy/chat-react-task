@@ -8,12 +8,12 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "bootstrap-4-react": "0.0.59",
-    "node-sass": "^4.14.0",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-nice-scrollbar": "0.0.3",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-scrollbars-custom": "^4.0.21"
   },
   "scripts": {
